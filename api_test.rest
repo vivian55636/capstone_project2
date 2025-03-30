@@ -1,0 +1,36 @@
+### GET request to retrieve one user
+GET http://localhost:8080/users/501335
+
+### POST REQUEST TO CREATE USER 
+POST http://localhost:8080/users
+Content-Type: application/json
+Content-Length: <length>
+
+{
+    "username": "Stanzey10",
+    "password": "stan2332",
+    "first_name": "Stanley",
+    "last_name": "Clark",
+    "email": "sclark10@gmail.com",
+    "phone": "9055553333",
+    "address": "24 lesley dr, Toronto Ontario, l7e 2v2 Canada"
+}
+
+### PUT REQUEST TO UPDATE AN EXISTING USER PHONE NUMBER
+PUT http://localhost:8080/users/501335
+Content-Type: application/json
+Content-Length: <length>
+
+{
+    "user_id": 501335,
+    "username": "Stanzey10",
+    "password": "stan2332",
+    "first_name": "Stanley",
+    "last_name": "Clark",
+    "email": "sclark10@gmail.com",
+    "phone": "9055554444", 
+    "address": "24 lesley dr, Toronto Ontario, l7e 2v2 Canada"
+}
+
+### DELETE REQUEST TO DELETE AN EXISTING USER
+DELETE http://localhost:8080/users/501335
